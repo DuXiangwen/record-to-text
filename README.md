@@ -4,6 +4,8 @@
 
 *A Windows desktop tool for transcribing long, multilingual meeting recordings — built for one specific workflow, not for everyone.*
 
+![主界面](docs/screenshot.png)
+
 ---
 
 ## 先读这段
