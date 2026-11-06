@@ -1,0 +1,39 @@
+{
+  "version": 3,
+  "api": {
+    "base_url": "https://token-plan-cn.xiaomimimo.com/v1",
+    "api_key": "",
+    "model": "mimo-v2.5-asr",
+    "timeout": 180,
+    "max_retries": 3
+  },
+  "defaults": {
+    "segment_seconds": 90,
+    "segment_mode": "silence",
+    "concurrency": 4,
+    "language": "auto",
+    "formats": ["md", "txt"]
+  },
+  "segment": {
+    "tolerance_ratio": 0.3,
+    "prefetch_ratio": 0.6,
+    "min_seg_ratio": 0.4,
+    "silence_db": -35.0,
+    "silence_min_sec": 0.4,
+    "long_silence_sec": 1.5,
+    "overlap_sec": 0.3
+  },
+  "waveform": {
+    "bucket_ms": 20,
+    "sample_rate": 16000,
+    "show_silence": true,
+    "silence_db": -45.0,
+    "silence_min_sec": 2.0
+  },
+  "window": {
+    "w": 1280,
+    "h": 840,
+    "x": 180,
+    "y": 80
+  }
+}

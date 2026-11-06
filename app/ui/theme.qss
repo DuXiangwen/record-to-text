@@ -1,0 +1,315 @@
+/* 录音转文本 · 浅色主题 */
+
+QWidget {
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI", sans-serif;
+    font-size: 13px;
+    color: #1F2328;
+}
+QMainWindow, #Root {
+    background: #FFFFFF;
+}
+QToolTip {
+    background: #2C2C2A;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+/* ---------- 顶栏 ---------- */
+#TopBar {
+    background: #FFFFFF;
+    border-bottom: 1px solid #ECECEA;
+}
+#AppTitle {
+    font-size: 14px;
+    font-weight: 600;
+}
+#AppSub {
+    font-size: 11px;
+    color: #9A9A94;
+}
+
+/* ---------- 波形区 ---------- */
+#WaveSection {
+    background: #F8F8F6;
+    border-bottom: 1px solid #ECECEA;
+}
+#WaveMeta {
+    font-size: 13px;
+    font-weight: 600;
+}
+#WaveMetaSub {
+    font-size: 12px;
+    color: #6B6B66;
+}
+#WaveHint {
+    font-size: 11px;
+    color: #A0A09A;
+}
+#SelInfo {
+    font-size: 12px;
+    color: #3C3C39;
+}
+#SelBadge {
+    font-size: 11px;
+    color: #185FA5;
+    background: #E6F1FB;
+    border-radius: 4px;
+    padding: 2px 7px;
+}
+
+/* ---------- 表单 ---------- */
+#FormPanel {
+    background: #FFFFFF;
+    border-right: 1px solid #ECECEA;
+}
+#SectionTitle {
+    font-size: 13px;
+    font-weight: 600;
+}
+#FieldLabel {
+    font-size: 11px;
+    color: #6B6B66;
+}
+QLineEdit, QSpinBox, QComboBox {
+    background: #FFFFFF;
+    border: 1px solid #D8D8D3;
+    border-radius: 6px;
+    padding: 5px 8px;
+    font-size: 12px;
+    selection-background-color: #B5D4F4;
+    selection-color: #042C53;
+}
+QLineEdit:focus, QSpinBox:focus, QComboBox:focus {
+    border: 1px solid #185FA5;
+}
+QLineEdit:disabled, QSpinBox:disabled, QComboBox:disabled {
+    background: #F4F4F2;
+    color: #A0A09A;
+}
+QComboBox::drop-down {
+    border: none;
+    width: 18px;
+}
+QComboBox QAbstractItemView {
+    border: 1px solid #D8D8D3;
+    background: #FFFFFF;
+    selection-background-color: #E6F1FB;
+    selection-color: #185FA5;
+    outline: none;
+}
+QSpinBox::up-button, QSpinBox::down-button {
+    width: 14px;
+    border: none;
+    background: transparent;
+}
+
+QPushButton#Primary {
+    background: #185FA5;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 7px;
+    padding: 9px 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+QPushButton#Primary:hover {
+    background: #134B82;
+}
+QPushButton#Primary:pressed {
+    background: #0F3D6B;
+}
+QPushButton#Primary:disabled {
+    background: #C9D6E3;
+    color: #FFFFFF;
+}
+QPushButton#Ghost {
+    background: transparent;
+    border: 1px solid #D8D8D3;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #3C3C39;
+}
+QPushButton#Ghost:hover {
+    background: #F4F4F2;
+    border-color: #BFBFB9;
+}
+QPushButton#Ghost:disabled {
+    color: #C0C0BA;
+    border-color: #E8E8E5;
+}
+QPushButton#LinkBtn {
+    background: transparent;
+    border: none;
+    color: #185FA5;
+    font-size: 12px;
+    padding: 2px 4px;
+}
+QPushButton#LinkBtn:hover {
+    color: #134B82;
+    text-decoration: underline;
+}
+
+QCheckBox {
+    font-size: 12px;
+    spacing: 5px;
+}
+QCheckBox::indicator {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #C8C8C2;
+    border-radius: 3px;
+    background: #FFFFFF;
+}
+QCheckBox::indicator:checked {
+    background: #185FA5;
+    border-color: #185FA5;
+}
+QCheckBox::indicator:hover {
+    border-color: #185FA5;
+}
+
+/* ---------- 卡片区 ---------- */
+#ListPanel {
+    background: #F8F8F6;
+}
+#SearchBox {
+    background: #FFFFFF;
+    border: 1px solid #E4E4E0;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 11px;
+}
+#CountLabel {
+    font-size: 12px;
+    color: #A0A09A;
+}
+#Card {
+    background: #FFFFFF;
+    border: 1px solid #ECECEA;
+    border-radius: 9px;
+}
+#Card:hover {
+    border-color: #D5D5CF;
+}
+#CardName {
+    font-size: 13px;
+    font-weight: 600;
+}
+#CardMeta {
+    font-size: 11px;
+    color: #6B6B66;
+}
+#CardParam {
+    font-size: 11px;
+    color: #A0A09A;
+}
+#CardAction {
+    font-size: 11px;
+    color: #185FA5;
+}
+#Badge {
+    font-size: 11px;
+    border-radius: 4px;
+    padding: 1px 6px;
+}
+
+QProgressBar#CardBar {
+    background: #EEEEEA;
+    border: none;
+    border-radius: 2px;
+    height: 4px;
+    text-align: center;
+}
+QProgressBar#CardBar::chunk {
+    border-radius: 2px;
+    background: #378ADD;
+}
+
+QScrollArea {
+    border: none;
+    background: transparent;
+}
+QScrollBar:vertical {
+    background: transparent;
+    width: 8px;
+    margin: 2px;
+}
+QScrollBar::handle:vertical {
+    background: #D5D5CF;
+    border-radius: 4px;
+    min-height: 30px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #B9B9B2;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: transparent;
+}
+
+/* ---------- 日志面板 ---------- */
+#LogPanel {
+    background: #FCFCFA;
+    border-top: 1px solid #ECECEA;
+}
+#LogTitle {
+    font-size: 11px;
+    color: #8A8A85;
+}
+#LogView {
+    background: #FCFCFA;
+    border: none;
+    padding: 0 12px 4px 16px;
+    color: #5F5E5A;
+    selection-background-color: #D5E4F2;
+    selection-color: #1F2328;
+}
+
+/* ---------- 状态栏 ---------- */
+#StatusBar {
+    background: #FFFFFF;
+    border-top: 1px solid #ECECEA;
+    font-size: 11px;
+    color: #8A8A85;
+}
+
+/* ---------- 弹窗 ---------- */
+QDialog {
+    background: #FFFFFF;
+}
+#DialogTitle {
+    font-size: 14px;
+    font-weight: 600;
+}
+QTabWidget::pane {
+    border: none;
+    border-top: 1px solid #ECECEA;
+}
+QTabBar::tab {
+    background: transparent;
+    border: none;
+    padding: 7px 14px;
+    font-size: 12px;
+    color: #6B6B66;
+}
+QTabBar::tab:selected {
+    color: #185FA5;
+    border-bottom: 2px solid #185FA5;
+}
+#HintLabel {
+    font-size: 11px;
+    color: #9A9A94;
+}
+#WarnLabel {
+    font-size: 11px;
+    color: #993C1D;
+}
+#OkLabel {
+    font-size: 11px;
+    color: #3B6D11;
+}
