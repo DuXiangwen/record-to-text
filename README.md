@@ -187,6 +187,12 @@ A10_1106_out_info/
 
 ---
 
+## Contributors
+
+<a href="https://github.com/DuXiangwen"><img src="https://avatars.githubusercontent.com/u/35134434?v=4" width="72" alt="@DuXiangwen"></a>
+
+欢迎 Issue 和 PR。
+
 ## License
 
 [MIT](LICENSE) © 2026 DuXiangwen
